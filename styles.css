@@ -1,0 +1,8 @@
+body h1 {
+  text-align: center;
+}
+body #qualities-list .quality-item {
+  background-color: aquamarine;
+  text-align: center;
+  border-radius: 15px;
+}/*# sourceMappingURL=styles.css.map */
