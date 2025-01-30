@@ -1,13 +1,15 @@
 body {
-    h1 {
-        text-align: center;
+    #qualities-list {
+        .card {
+            border-width: 3px;
+            border-radius: 20px;
+        }
     }
     
-    .cute-label {
+    .new-label {
         position: absolute;
         top: 10px;
         right: 10px;
-        background-color: #6c757d; /* Darker shade of the card color */
         color: white;
         border-radius: 5px;
         padding: 2px 5px;
