@@ -9,11 +9,20 @@
 </head>
 
 <body>
-    <div class="container mt-5 pt-5">
-        <h1 class="text-center">Get to know me better!</h1>
+    <div id="header" class="container-fluid py-5">
+        <h1 class="text-center mt-5 text-white">Get to know me better!</h1>
 
-        <p class="text-center mb-5">Here is a non-exhaustive list of qualities and traits accompanied by an unnecessary but fun analysis of each one</p>
-        
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p class="text-center mb-5 text-white fw-bold">Here is a non-exhaustive list of qualities and traits accompanied by an unnecessary but fun analysis of each one</p>
+            </div>
+        </div>
+
+        <!-- Wavy SVG -->
+        <!-- <svg class="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 130" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" style="transform:translate(0, 0px); opacity:1" d="M0,13L60,23.8C120,35,240,56,360,60.7C480,65,600,52,720,39C840,26,960,13,1080,17.3C1200,22,1320,43,1440,54.2C1560,65,1680,65,1800,54.2C1920,43,2040,22,2160,17.3C2280,13,2400,26,2520,43.3C2640,61,2760,82,2880,82.3C3000,82,3120,61,3240,49.8C3360,39,3480,39,3600,39C3720,39,3840,39,3960,39C4080,39,4200,39,4320,32.5C4440,26,4560,13,4680,17.3C4800,22,4920,43,5040,52C5160,61,5280,56,5400,47.7C5520,39,5640,26,5760,23.8C5880,22,6000,30,6120,47.7C6240,65,6360,91,6480,84.5C6600,78,6720,39,6840,30.3C6960,22,7080,43,7200,60.7C7320,78,7440,91,7560,88.8C7680,87,7800,69,7920,65C8040,61,8160,69,8280,80.2C8400,91,8520,104,8580,110.5L8640,117L8640,130L8580,130C8520,130,8400,130,8280,130C8160,130,8040,130,7920,130C7800,130,7680,130,7560,130C7440,130,7320,130,7200,130C7080,130,6960,130,6840,130C6720,130,6600,130,6480,130C6360,130,6240,130,6120,130C6000,130,5880,130,5760,130C5640,130,5520,130,5400,130C5280,130,5160,130,5040,130C4920,130,4800,130,4680,130C4560,130,4440,130,4320,130C4200,130,4080,130,3960,130C3840,130,3720,130,3600,130C3480,130,3360,130,3240,130C3120,130,3000,130,2880,130C2760,130,2640,130,2520,130C2400,130,2280,130,2160,130C2040,130,1920,130,1800,130C1680,130,1560,130,1440,130C1320,130,1200,130,1080,130C960,130,840,130,720,130C600,130,480,130,360,130C240,130,120,130,60,130L0,130Z"></path></svg> -->
+    </div>
+
+    <div class="container mt-5">
         <div class="row mb-5 pt-5">
             <div class="col-md-3">
                 <div class="form-floating">
@@ -31,6 +40,10 @@
         
         <div id="qualities-list" class="row"></div>
     </div>
+
+    <footer class="mt-5 mb-4">
+        <p class="text-center text-muted">&copy; 2025 Geneviève Harvey | All rights reserved</p>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>

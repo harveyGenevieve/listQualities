@@ -4,6 +4,9 @@ async function fetchQualities() {
         const data = await response.json();
         const sortedQualities = sortQualities(data.qualityList, 'random');
         displayQualities(sortedQualities);
+    
+        // Set the background color of the header
+        document.getElementById("header").style.background = "linear-gradient(to right, " + getRandomColor() + ", " + getRandomColor() + ")";
     } catch (error) {
         console.error('Error fetching the qualities:', error);
     }
@@ -41,7 +44,7 @@ function displayQualities(qualities) {
 
         // Starting item
         const qualityItem = document.createElement('div');
-        qualityItem.classList.add('col-md-6', 'col-lg-4', 'mb-4');
+        qualityItem.classList.add('col-md-6', 'col-lg-3', 'mb-4');
 
         // Starting card
         const qualityCard = document.createElement('div');

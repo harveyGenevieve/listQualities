@@ -1,4 +1,21 @@
 body {
+    #header {
+        // position: relative;
+        // padding-bottom: 0; /* Remove bottom padding to avoid extra space */
+
+        // .wave {
+        //     position: absolute;
+        //     bottom: -1px;
+        //     left: 0;
+        //     width: 100%;
+        //     height: auto;
+        // }
+
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+
     #qualities-list {
         .card {
             border-width: 3px;
