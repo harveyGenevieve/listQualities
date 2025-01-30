@@ -2,7 +2,10 @@ body h1 {
   text-align: center;
 }
 body #qualities-list .quality-item {
-  background-color: aquamarine;
   text-align: center;
+}
+body #qualities-list .quality-item .quality-wrapper {
+  background-color: lightblue;
   border-radius: 15px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=styles.css.map */
