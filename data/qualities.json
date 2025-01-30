@@ -17,17 +17,17 @@
         {
             "name" : "Agreeable/Likable",
             "description" : "Some people find me intimidating due to my reserved and quiet nature, but the people that look past that find me quite likable. I am friendly, gentle, polite and I smile from the heart.",
-            "endorsedBy" : [],
+            "endorsedBy" : null,
             "type" : "quality",
-            "date" : "19/11/24",
+            "date" : "2024-11-04",
             "new" : false
         },
         {
             "name" : "Ambitious/Competitive",
             "description" : "I am good at setting goals and objectives and reaching them. My actions and results speak of my determination and desire to achieve my dreams. I find motivation in situations where I can prove myself and my abilities.",
-            "endorsedBy" : [],
+            "endorsedBy" : null,
             "type" : "quality",
-            "date" : "19/11/24",
+            "date" : "2024-11-04",
             "new" : false
         },
         {
@@ -41,7 +41,7 @@
                 }
             ],
             "type" : "quality",
-            "date" : "19/11/24",
+            "date" : "2024-11-04",
             "new" : false
         }
     ]
