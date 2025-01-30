@@ -10,25 +10,35 @@
             }
         ],
         "type" : "",
-        "date" : "",
-        "new" : true
+        "date" : ""
     },
     "qualityList" : [
+        {
+            "name" : "Test",
+            "description" : "I take note of small details or ways I could provide help or assistance. I want people around me to feel content and comfortable. I am thoughtful and pay close attention to the impact of my words and actions.",
+            "endorsedBy" : [
+                {
+                    "firstName" : "Morgane",
+                    "lastName" : "Harvey",
+                    "relationship" : "family"
+                }
+            ],
+            "type" : "quality",
+            "date" : "2025-01-04"
+        },
         {
             "name" : "Agreeable/Likable",
             "description" : "Some people find me intimidating due to my reserved and quiet nature, but the people that look past that find me quite likable. I am friendly, gentle, polite and I smile from the heart.",
             "endorsedBy" : null,
             "type" : "quality",
-            "date" : "2024-11-04",
-            "new" : false
+            "date" : "2024-11-04"
         },
         {
             "name" : "Ambitious/Competitive",
             "description" : "I am good at setting goals and objectives and reaching them. My actions and results speak of my determination and desire to achieve my dreams. I find motivation in situations where I can prove myself and my abilities.",
             "endorsedBy" : null,
             "type" : "quality",
-            "date" : "2024-11-04",
-            "new" : false
+            "date" : "2024-11-04"
         },
         {
             "name" : "Attentionate",
@@ -41,8 +51,7 @@
                 }
             ],
             "type" : "quality",
-            "date" : "2024-11-04",
-            "new" : false
+            "date" : "2024-11-04"
         }
     ]
 }

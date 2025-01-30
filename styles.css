@@ -1,11 +1,15 @@
 body h1 {
   text-align: center;
 }
-body #qualities-list .quality-item {
-  text-align: center;
-}
-body #qualities-list .quality-item .quality-wrapper {
-  background-color: lightblue;
-  border-radius: 15px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+body .cute-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #6c757d; /* Darker shade of the card color */
+  color: white;
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: 0.75em; /* Smaller font size */
+  font-weight: bold;
+  z-index: 1; /* Ensure it is on top of other elements */
 }/*# sourceMappingURL=styles.css.map */

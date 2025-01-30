@@ -24,34 +24,58 @@ function getRandomColor() {
 function displayQualities(qualities) {
     const qualitiesList = document.getElementById('qualities-list');
     qualities.forEach(quality => {
+        // Starting item
         const qualityItem = document.createElement('div');
         qualityItem.classList.add('col-md-6', 'col-lg-4', 'mb-4');
 
+        // Starting card
         const qualityCard = document.createElement('div');
         qualityCard.classList.add('card', 'h-100');
         qualityCard.style.backgroundColor = getRandomColor();
 
+        // Starting body
         const qualityBody = document.createElement('div');
         qualityBody.classList.add('card-body');
 
+        // Name
         const qualityName = document.createElement('h3');
         qualityName.classList.add('card-title', 'h5');
         qualityName.textContent = quality.name;
-        qualityBody.appendChild(qualityName);
 
+        // Description
         const qualityDescription = document.createElement('p');
         qualityDescription.classList.add('card-text');
         qualityDescription.textContent = quality.description;
-        qualityBody.appendChild(qualityDescription);
 
+        // Date
         const qualityDate = document.createElement('small');
         qualityDate.classList.add('text-muted');
         const dateToTransform = new Date(quality.date + 'T12:00:00');        const formattedDate = dateToTransform.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
         qualityDate.textContent = 'Added on ' + formattedDate;
-        qualityBody.appendChild(qualityDate);
 
+        // Check if the date is within the last 30 days
+        const currentDate = new Date();
+        const thirtyDaysAgo = new Date();
+        thirtyDaysAgo.setDate(currentDate.getDate() - 30);
+
+        if (dateToTransform >= thirtyDaysAgo && dateToTransform <= currentDate) {
+            console.log('The date is within the last 30 days.');
+            const newLabel = document.createElement('span');
+            newLabel.classList.add('cute-label');
+            newLabel.textContent = 'New';
+            qualityCard.appendChild(newLabel); // Append to the card instead of qualityName
+        } else {
+            console.log('The date is not within the last 30 days.');
+        }
+
+        // Piece the body together
+        qualityBody.appendChild(qualityName);
+        qualityBody.appendChild(qualityDescription);
+        qualityBody.appendChild(qualityDate);
         qualityCard.appendChild(qualityBody);
 
+        // Starting footer
+        // Endorsements
         if (quality.endorsedBy && Array.isArray(quality.endorsedBy) && quality.endorsedBy.length > 0) {
             const qualityFooter = document.createElement('div');
             qualityFooter.classList.add('card-footer');
@@ -77,6 +101,7 @@ function displayQualities(qualities) {
             qualityCard.appendChild(qualityFooter);
         }
 
+        // Bringing pieces together
         qualityItem.appendChild(qualityCard);
         qualitiesList.appendChild(qualityItem);
     });
