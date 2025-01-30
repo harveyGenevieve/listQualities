@@ -1,0 +1,48 @@
+{
+    "template" : {
+        "name" : "",
+        "description" : "",
+        "endorsedBy" : [
+            {
+                "firstName" : "",
+                "lastName" : "",
+                "relationship" : ""
+            }
+        ],
+        "type" : "",
+        "date" : "",
+        "new" : true
+    },
+    "qualityList" : [
+        {
+            "name" : "Agreeable/Likable",
+            "description" : "Some people find me intimidating due to my reserved and quiet nature, but the people that look past that find me quite likable. I am friendly, gentle, polite and I smile from the heart.",
+            "endorsedBy" : [],
+            "type" : "quality",
+            "date" : "19/11/24",
+            "new" : false
+        },
+        {
+            "name" : "Ambitious/Competitive",
+            "description" : "I am good at setting goals and objectives and reaching them. My actions and results speak of my determination and desire to achieve my dreams. I find motivation in situations where I can prove myself and my abilities.",
+            "endorsedBy" : [],
+            "type" : "quality",
+            "date" : "19/11/24",
+            "new" : false
+        },
+        {
+            "name" : "Attentionate",
+            "description" : "I like to make people feel seen and heard. I take note of small details or ways I could provide help or assistance. I want people around me to feel content and comfortable. I am thoughtful and pay close attention to the impact of my words and actions.",
+            "endorsedBy" : [
+                {
+                    "firstName" : "Julie",
+                    "lastName" : "Gagnon",
+                    "relationship" : "family"
+                }
+            ],
+            "type" : "quality",
+            "date" : "19/11/24",
+            "new" : false
+        }
+    ]
+}
