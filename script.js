@@ -44,7 +44,7 @@ function displayQualities(qualities) {
 
         // Starting item
         const qualityItem = document.createElement('div');
-        qualityItem.classList.add('col-md-6', 'col-lg-3', 'mb-4');
+        qualityItem.classList.add('col-md-6', 'col-lg-4', 'col-xl-3', 'mb-4');
 
         // Starting card
         const qualityCard = document.createElement('div');
